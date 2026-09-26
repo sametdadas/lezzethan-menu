@@ -3,154 +3,342 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Lezzethan Ocakbaşı</title>
 
 <style>
+
+*{
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f7f1e8;
-    color:#222;
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5efe6;
+color:#222;
 }
 
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:25px;
+.header{
+background:linear-gradient(135deg,#111,#3a0000);
+color:white;
+text-align:center;
+padding:35px 20px;
 }
 
-header h1{
-    margin:0;
-    font-size:40px;
-    letter-spacing:2px;
+.header h1{
+font-size:38px;
+margin:0;
+letter-spacing:2px;
 }
 
-header span{
-    color:#d71920;
+.header span{
+color:#e51b23;
+}
+
+.header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.cover{
+height:180px;
+background:
+linear-gradient(#0005,#0005),
+url("https://images.unsplash.com/photo-1544025162-d76694265947")
+center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:30px;
+font-weight:bold;
 }
 
 .container{
-    padding:15px;
+padding:20px;
 }
 
-.category{
-    background:white;
-    margin-bottom:20px;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 4px 15px #0002;
+.card{
+background:white;
+border-radius:20px;
+margin-bottom:20px;
+overflow:hidden;
+box-shadow:0 5px 20px #0002;
 }
 
-.title{
-    background:#b51217;
-    color:white;
-    padding:15px;
-    font-size:25px;
-    font-weight:bold;
+.card h2{
+margin:0;
+padding:18px;
+background:#b51217;
+color:white;
+font-size:24px;
 }
 
 .item{
-    display:flex;
-    justify-content:space-between;
-    padding:12px 15px;
-    border-bottom:1px solid #ddd;
-    font-size:18px;
+display:flex;
+justify-content:space-between;
+padding:14px 18px;
+border-bottom:1px solid #eee;
+font-size:18px;
+}
+
+.item:last-child{
+border-bottom:none;
 }
 
 .price{
-    color:#b51217;
-    font-weight:bold;
-}
-
-.footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
+font-weight:bold;
+color:#b51217;
 }
 
 .button{
-    display:block;
-    background:#d71920;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin:15px;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
+display:block;
+margin:15px;
+padding:18px;
+text-align:center;
+border-radius:15px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+color:white;
+background:#25D366;
 }
+
+.location{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+line-height:1.7;
+}
+
+
 </style>
 
 </head>
 
 <body>
 
-<header>
+
+<div class="header">
+
 <h1>LEZZETHAN <span>OCAKBAŞI</span></h1>
+
 <p>Lezzetin Doğru Adresi</p>
-</header>
+
+</div>
+
+
+<div class="cover">
+QR MENÜ
+</div>
 
 
 <div class="container">
 
-<div class="category">
-<div class="title">🍖 Ana Yemekler</div>
 
-<div class="item">Alabalık <span class="price">600 TL</span></div>
-<div class="item">Hamsi <span class="price">550 TL</span></div>
-<div class="item">Tavuk Izgara <span class="price">500 TL</span></div>
-<div class="item">Karışık Izgara <span class="price">600 TL</span></div>
-<div class="item">Adana Kebap <span class="price">400 TL</span></div>
-<div class="item">Et Şiş <span class="price">400 TL</span></div>
-<div class="item">Köfte <span class="price">400 TL</span></div>
+<div class="card">
+
+<h2>🍖 ANA YEMEKLER</h2>
+
+
+<div class="item">
+Alabalık
+<span class="price">600 TL</span>
+</div>
+
+
+<div class="item">
+Hamsi
+<span class="price">550 TL</span>
+</div>
+
+
+<div class="item">
+Tavuk Izgara
+<span class="price">500 TL</span>
+</div>
+
+
+<div class="item">
+Karışık Izgara
+<span class="price">600 TL</span>
+</div>
+
+
+<div class="item">
+Tavuk Şiş
+<span class="price">350 TL</span>
+</div>
+
+
+<div class="item">
+Et Şiş
+<span class="price">400 TL</span>
+</div>
+
+
+<div class="item">
+Köfte
+<span class="price">400 TL</span>
+</div>
+
+
+<div class="item">
+Kanat
+<span class="price">450 TL</span>
+</div>
+
+
+<div class="item">
+Adana Kebap
+<span class="price">400 TL</span>
+</div>
+
+
+<div class="item">
+Ciğer
+<span class="price">350 TL</span>
+</div>
+
+
+<div class="item">
+Külbastı
+<span class="price">600 TL</span>
+</div>
+
+
+<div class="item">
+Pirzola
+<span class="price">600 TL</span>
+</div>
+
+
+<div class="item">
+Çağ Kebap
+<span class="price">130 TL</span>
+</div>
+
+
+<div class="item">
+Kıymalı Mantı
+<span class="price">400 TL</span>
+</div>
+
+
+<div class="item">
+Patatesli Mantı
+<span class="price">350 TL</span>
+</div>
+
+
+<div class="item">
+Patates Kızartması
+<span class="price">150 TL</span>
+</div>
+
 
 </div>
 
 
-<div class="category">
-<div class="title">🥤 İçecekler</div>
 
-<div class="item">Su <span class="price">25 TL</span></div>
-<div class="item">Cola <span class="price">75 TL</span></div>
-<div class="item">Ayran <span class="price">30 TL</span></div>
-<div class="item">Şalgam <span class="price">75 TL</span></div>
-<div class="item">Türk Kahvesi <span class="price">100 TL</span></div>
+<div class="card">
+
+<h2>🥤 İÇECEKLER</h2>
+
+
+<div class="item">
+Su
+<span class="price">25 TL</span>
+</div>
+
+<div class="item">
+Cola
+<span class="price">75 TL</span>
+</div>
+
+<div class="item">
+Ayran
+<span class="price">30 TL</span>
+</div>
+
+<div class="item">
+Şalgam
+<span class="price">75 TL</span>
+</div>
+
+<div class="item">
+Meyve Suyu
+<span class="price">50 TL</span>
+</div>
+
+<div class="item">
+Soda
+<span class="price">50 TL</span>
+</div>
+
+<div class="item">
+Türk Kahvesi
+<span class="price">100 TL</span>
+</div>
+
 
 </div>
 
 
-<div class="category">
-<div class="title">🍳 Serpme Kahvaltı</div>
 
-<div class="item">Serpme Kahvaltı <span class="price">400 TL</span></div>
+<div class="card">
+
+<h2>🍳 SERPME KAHVALTI</h2>
+
+<div class="item">
+Serpme Kahvaltı
+<span class="price">400 TL</span>
+</div>
 
 </div>
 
 
-<div class="category">
-<div class="title">🍰 Tatlılar</div>
 
-<div class="item">Baklava <span class="price">200 TL</span></div>
-<div class="item">Kadayıf Dolma <span class="price">100 TL</span></div>
+<div class="card">
+
+<h2>🍰 TATLILAR</h2>
+
+
+<div class="item">
+Baklava
+<span class="price">200 TL</span>
+</div>
+
+
+<div class="item">
+Kadayıf Dolma
+<span class="price">100 TL</span>
+</div>
+
 
 </div>
 
 
-<a class="button" href="tel:05072982267">
-📞 Sipariş Ver: 0507 298 2267
+
+<a class="button" href="https://wa.me/905072982267">
+📞 WhatsApp Sipariş
 </a>
 
 
+
 </div>
 
 
-<div class="footer">
+<div class="location">
+
 📍 Erzurum / Oltu<br>
+
 Erzurum Yolu Shell'den 1 KM Uzakta<br>
+
 Sarısaz Köyü Karşısında
+
 </div>
 
 
